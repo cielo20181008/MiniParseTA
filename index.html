@@ -109,7 +109,7 @@
         // ヘッダの定義
         var headerDefine =
         [
-          //  { html: "<img src='Job{JobOrName}.png',width='15' height='15' />", width: "5%", align: "center" },
+            { text: " ", width: "0.1%" , align: "center" },
             { text: "Name", width: "0.6%", align: "left" },
             { text: "Job", width: "0.1%", align: "left" },
             { text: "DPS (%)", width: "0.3%", align: "center"},
@@ -117,21 +117,19 @@
             { text: "CritDH(%)", width: "0.3%", align: "center"},
             { text: "Crit(%)", width: "0.2%", align: "left"},
             { text: "Direct(%)", width: "0.2%", align: "left" },
-            //{ text: "swing", width: "0.3%", align: "center" },
         ];
 
         // 表示するデータの定義
         var bodyDefine =
         [
-            //{ text: rankingText, width: "5%", align: "center", effect: deadYatsuEffect },
-            { text: "{name}", width: "0.7%"},
+            { text: rankingText, width: "0.1%", align: "center", effect: deadYatsuEffect },
+            { text: namereplace, width: "0.7%"},
             { html: "<img src='jobicon/Job{Job}.png',width='20' height='20' />", width: "0.1%", align: "left" },
             { text: "{encdps}", width: "0.3%", align: "center" },
             { text: "{damage%}", width: "0.3%", align: "center" },
             { text: "{CritDirectHitPct}", width: "0.2%", align: "center" },
             { text: "{crithit%}", width: "0.1%", align: "center" },
             { text: "{DirectHitPct}", width: "0.2%", align: "center" },
-            //{ text: "{swings}", width: "0.3%", align: "center" },
         ];
 
         // 順位を表示する（text に関数を指定する例）
